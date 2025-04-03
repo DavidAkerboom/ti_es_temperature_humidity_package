@@ -1,0 +1,93 @@
+[0.000000] (-) TimerEvent: {}
+[0.001535] (ti_es_temperature_humidity_package) JobQueued: {'identifier': 'ti_es_temperature_humidity_package', 'dependencies': OrderedDict()}
+[0.001662] (ti_es_temperature_humidity_package) JobStarted: {'identifier': 'ti_es_temperature_humidity_package'}
+[0.099259] (-) TimerEvent: {}
+[0.199850] (-) TimerEvent: {}
+[0.300481] (-) TimerEvent: {}
+[0.401016] (-) TimerEvent: {}
+[0.501599] (-) TimerEvent: {}
+[0.602122] (-) TimerEvent: {}
+[0.702630] (-) TimerEvent: {}
+[0.803135] (-) TimerEvent: {}
+[0.903790] (-) TimerEvent: {}
+[1.004665] (-) TimerEvent: {}
+[1.105267] (-) TimerEvent: {}
+[1.205927] (-) TimerEvent: {}
+[1.306564] (-) TimerEvent: {}
+[1.407141] (-) TimerEvent: {}
+[1.507672] (-) TimerEvent: {}
+[1.608227] (-) TimerEvent: {}
+[1.708738] (-) TimerEvent: {}
+[1.809305] (-) TimerEvent: {}
+[1.909812] (-) TimerEvent: {}
+[2.010441] (-) TimerEvent: {}
+[2.111090] (-) TimerEvent: {}
+[2.211605] (-) TimerEvent: {}
+[2.312132] (-) TimerEvent: {}
+[2.412656] (-) TimerEvent: {}
+[2.513250] (-) TimerEvent: {}
+[2.613760] (-) TimerEvent: {}
+[2.714317] (-) TimerEvent: {}
+[2.814834] (-) TimerEvent: {}
+[2.915406] (-) TimerEvent: {}
+[3.015957] (-) TimerEvent: {}
+[3.116518] (-) TimerEvent: {}
+[3.217102] (-) TimerEvent: {}
+[3.317659] (-) TimerEvent: {}
+[3.418289] (-) TimerEvent: {}
+[3.508575] (ti_es_temperature_humidity_package) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', 'build/ti_es_temperature_humidity_package', 'build', '--build-base', '/home/david/tinlabs_project/src/ti_es_temperature_humidity_package/build/ti_es_temperature_humidity_package/build', 'install', '--record', '/home/david/tinlabs_project/src/ti_es_temperature_humidity_package/build/ti_es_temperature_humidity_package/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/david/tinlabs_project/src/ti_es_temperature_humidity_package', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'david', 'SSH_CLIENT': '192.168.0.188 18287 22', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/david', 'OLDPWD': '/home/david/tinlabs_project/src', 'SSH_TTY': '/dev/pts/0', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1002/bus', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'COLCON_PREFIX_PATH': '/home/david/tinlabs_project/src/ti_es_temperature_humidity_package/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'david', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm', 'XDG_SESSION_ID': '2', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1002', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy:/home/david/tinlabs_project/src/ti_es_temperature_humidity_package/install/ti_es_temperature_humidity_package', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/david/tinlabs_project/src/ti_es_temperature_humidity_package/build/ti_es_temperature_humidity_package', 'SSH_CONNECTION': '192.168.0.188 18287 192.168.0.159 22', 'XDG_DATA_DIRS': '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/david/tinlabs_project/src/ti_es_temperature_humidity_package/build/ti_es_temperature_humidity_package/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/david/tinlabs_project/src/ti_es_temperature_humidity_package/install/ti_es_temperature_humidity_package/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages:/home/david/tinlabs_project/src/ti_es_temperature_humidity_package/install/ti_es_temperature_humidity_package/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor'}, 'shell': False}
+[3.519279] (-) TimerEvent: {}
+[3.620245] (-) TimerEvent: {}
+[3.720814] (-) TimerEvent: {}
+[3.821403] (-) TimerEvent: {}
+[3.922097] (-) TimerEvent: {}
+[4.022798] (-) TimerEvent: {}
+[4.123385] (-) TimerEvent: {}
+[4.223924] (-) TimerEvent: {}
+[4.324491] (-) TimerEvent: {}
+[4.425001] (-) TimerEvent: {}
+[4.525542] (-) TimerEvent: {}
+[4.626168] (-) TimerEvent: {}
+[4.640125] (ti_es_temperature_humidity_package) StdoutLine: {'line': b'running egg_info\n'}
+[4.721834] (ti_es_temperature_humidity_package) StdoutLine: {'line': b'writing build/ti_es_temperature_humidity_package/ti_es_temperature_humidity_package.egg-info/PKG-INFO\n'}
+[4.722966] (ti_es_temperature_humidity_package) StdoutLine: {'line': b'writing dependency_links to build/ti_es_temperature_humidity_package/ti_es_temperature_humidity_package.egg-info/dependency_links.txt\n'}
+[4.724116] (ti_es_temperature_humidity_package) StdoutLine: {'line': b'writing entry points to build/ti_es_temperature_humidity_package/ti_es_temperature_humidity_package.egg-info/entry_points.txt\n'}
+[4.724852] (ti_es_temperature_humidity_package) StdoutLine: {'line': b'writing requirements to build/ti_es_temperature_humidity_package/ti_es_temperature_humidity_package.egg-info/requires.txt\n'}
+[4.725523] (ti_es_temperature_humidity_package) StdoutLine: {'line': b'writing top-level names to build/ti_es_temperature_humidity_package/ti_es_temperature_humidity_package.egg-info/top_level.txt\n'}
+[4.726276] (-) TimerEvent: {}
+[4.826751] (-) TimerEvent: {}
+[4.894686] (ti_es_temperature_humidity_package) StdoutLine: {'line': b"reading manifest file 'build/ti_es_temperature_humidity_package/ti_es_temperature_humidity_package.egg-info/SOURCES.txt'\n"}
+[4.896259] (ti_es_temperature_humidity_package) StdoutLine: {'line': b"adding license file 'LICENSE'\n"}
+[4.898746] (ti_es_temperature_humidity_package) StdoutLine: {'line': b"writing manifest file 'build/ti_es_temperature_humidity_package/ti_es_temperature_humidity_package.egg-info/SOURCES.txt'\n"}
+[4.899424] (ti_es_temperature_humidity_package) StdoutLine: {'line': b'running build\n'}
+[4.899868] (ti_es_temperature_humidity_package) StdoutLine: {'line': b'running build_py\n'}
+[4.901101] (ti_es_temperature_humidity_package) StdoutLine: {'line': b'copying ti_es_temperature_humidity_package/ti_es_temperature_humidity_node.py -> /home/david/tinlabs_project/src/ti_es_temperature_humidity_package/build/ti_es_temperature_humidity_package/build/lib/ti_es_temperature_humidity_package\n'}
+[4.902145] (ti_es_temperature_humidity_package) StdoutLine: {'line': b'running install\n'}
+[4.924485] (ti_es_temperature_humidity_package) StdoutLine: {'line': b'running install_lib\n'}
+[4.926877] (-) TimerEvent: {}
+[5.017522] (ti_es_temperature_humidity_package) StdoutLine: {'line': b'copying /home/david/tinlabs_project/src/ti_es_temperature_humidity_package/build/ti_es_temperature_humidity_package/build/lib/ti_es_temperature_humidity_package/ti_es_temperature_humidity_node.py -> /home/david/tinlabs_project/src/ti_es_temperature_humidity_package/install/ti_es_temperature_humidity_package/lib/python3.12/site-packages/ti_es_temperature_humidity_package\n'}
+[5.020506] (ti_es_temperature_humidity_package) StdoutLine: {'line': b'byte-compiling /home/david/tinlabs_project/src/ti_es_temperature_humidity_package/install/ti_es_temperature_humidity_package/lib/python3.12/site-packages/ti_es_temperature_humidity_package/ti_es_temperature_humidity_node.py to ti_es_temperature_humidity_node.cpython-312.pyc\n'}
+[5.021513] (ti_es_temperature_humidity_package) StderrLine: {'line': b'  File "/home/david/tinlabs_project/src/ti_es_temperature_humidity_package/install/ti_es_temperature_humidity_package/lib/python3.12/site-packages/ti_es_temperature_humidity_package/ti_es_temperature_humidity_node.py", line 1\n'}
+[5.022160] (ti_es_temperature_humidity_package) StderrLine: {'line': b'    from smbus\n'}
+[5.022541] (ti_es_temperature_humidity_package) StderrLine: {'line': b'              ^\n'}
+[5.022903] (ti_es_temperature_humidity_package) StderrLine: {'line': b'SyntaxError: invalid syntax\n'}
+[5.023405] (ti_es_temperature_humidity_package) StderrLine: {'line': b'\n'}
+[5.023742] (ti_es_temperature_humidity_package) StdoutLine: {'line': b'running install_data\n'}
+[5.024120] (ti_es_temperature_humidity_package) StdoutLine: {'line': b'running install_egg_info\n'}
+[5.027004] (-) TimerEvent: {}
+[5.110929] (ti_es_temperature_humidity_package) StdoutLine: {'line': b"removing '/home/david/tinlabs_project/src/ti_es_temperature_humidity_package/install/ti_es_temperature_humidity_package/lib/python3.12/site-packages/ti_es_temperature_humidity_package-0.0.0-py3.12.egg-info' (and everything under it)\n"}
+[5.112818] (ti_es_temperature_humidity_package) StdoutLine: {'line': b'Copying build/ti_es_temperature_humidity_package/ti_es_temperature_humidity_package.egg-info to /home/david/tinlabs_project/src/ti_es_temperature_humidity_package/install/ti_es_temperature_humidity_package/lib/python3.12/site-packages/ti_es_temperature_humidity_package-0.0.0-py3.12.egg-info\n'}
+[5.118611] (ti_es_temperature_humidity_package) StdoutLine: {'line': b'running install_scripts\n'}
+[5.127150] (-) TimerEvent: {}
+[5.227669] (-) TimerEvent: {}
+[5.328201] (-) TimerEvent: {}
+[5.428696] (-) TimerEvent: {}
+[5.529229] (-) TimerEvent: {}
+[5.629732] (-) TimerEvent: {}
+[5.730311] (-) TimerEvent: {}
+[5.733915] (ti_es_temperature_humidity_package) StdoutLine: {'line': b'Installing ti_es_temperature_humidity_node script to /home/david/tinlabs_project/src/ti_es_temperature_humidity_package/install/ti_es_temperature_humidity_package/lib/ti_es_temperature_humidity_package\n'}
+[5.735533] (ti_es_temperature_humidity_package) StdoutLine: {'line': b"writing list of installed files to '/home/david/tinlabs_project/src/ti_es_temperature_humidity_package/build/ti_es_temperature_humidity_package/install.log'\n"}
+[5.830592] (-) TimerEvent: {}
+[5.876880] (ti_es_temperature_humidity_package) CommandEnded: {'returncode': 0}
+[5.920273] (ti_es_temperature_humidity_package) JobEnded: {'identifier': 'ti_es_temperature_humidity_package', 'rc': 0}
+[5.923204] (-) EventReactorShutdown: {}

@@ -1,0 +1,5 @@
+  File "/home/david/tinlabs_project/src/ti_es_temperature_humidity_package/install/ti_es_temperature_humidity_package/lib/python3.12/site-packages/ti_es_temperature_humidity_package/ti_es_temperature_humidity_node.py", line 1
+    from smbus
+              ^
+SyntaxError: invalid syntax
+

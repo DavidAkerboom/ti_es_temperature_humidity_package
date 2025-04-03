@@ -1,0 +1,6 @@
+source;share/ti_es_temperature_humidity_package/hook/pythonpath.ps1
+source;share/ti_es_temperature_humidity_package/hook/pythonpath.dsv
+source;share/ti_es_temperature_humidity_package/hook/pythonpath.sh
+source;share/ti_es_temperature_humidity_package/hook/ament_prefix_path.ps1
+source;share/ti_es_temperature_humidity_package/hook/ament_prefix_path.dsv
+source;share/ti_es_temperature_humidity_package/hook/ament_prefix_path.sh
