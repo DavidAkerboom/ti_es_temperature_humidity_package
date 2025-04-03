@@ -1,2 +1,0 @@
-[console_scripts]
-ti_es_temperature_humidity_node = ti_es_temperature_humidity_package.ti_es_temperature_humidity_node:main
