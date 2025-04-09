@@ -1,7 +1,8 @@
 import smbus
 import lgpio
 import rclpy
-from rclpy.node import Node
+# from rclpy.node import Node
+from rclpy.lifecycle import Node, State, TransitionCallbackReturn
 import time
 from enum import Enum
 from dataclasses import dataclass
@@ -22,9 +23,10 @@ class sensorData:
 
 
 class temperatureHumidityNode(Node):
-    def __init__(self):
-        super().__init__('temperature_humidity_topic')
+    def __init__(self,**kwargs):
+        super().__init__('temperature_humidity_topic',**kwargs)
 
+    def on_configure(self, state: State) -> TransitionCallbackReturn:
         time.sleep(0.1)
         while True:
             try:
@@ -35,8 +37,35 @@ class temperatureHumidityNode(Node):
                 print("Error: Sensor not found. Retrying...")
                 time.sleep(1)  # Wait before retrying
 
-        self.log_publisher = self.create_publisher(String, "ti/es/log_data", 10)
+        self.log_publisher = self.create_publisher(String, "ti/es/log_data", 10)        
+
+        self.get_logger().info('on_configure() is called.')
+        return TransitionCallbackReturn.SUCCESS
+
+    def on_activate(self, state: State) -> TransitionCallbackReturn:
         self.timer = self.create_timer(I2C_TIMER, self.timer_callback)
+
+        self.get_logger().info('on_activate() is called.')
+        return super().on_activate(state)
+
+    def on_deactivate(self, state: State) -> TransitionCallbackReturn:
+        self.destroy_timer(self.timer_callback)
+
+        self.get_logger().info('on_deactivate() is called.')
+        return super().on_deactivate(state)
+
+    def on_cleanup(self, state: State) -> TransitionCallbackReturn:
+        self.destroy_publisher(self.log_publisher)
+
+        self.get_logger().info('on_cleanup() is called.')
+        return TransitionCallbackReturn.SUCCESS
+
+    def on_shutdown(self, state: State) -> TransitionCallbackReturn:
+        self.destroy_timer(self.timer_callback)
+        self.destroy_publisher(self.log_publisher)
+
+        self.get_logger().info('on_shutdown() is called.')
+        return TransitionCallbackReturn.SUCCESS
 
 
     # Timer callback that repeatedly checks measurements from the sensor
@@ -77,12 +106,14 @@ class temperatureHumidityNode(Node):
 
 def main(args=None):
     rclpy.init(args=args)
-    thn = temperatureHumidityNode()
 
+    executor = rclpy.executors.SingleThreadedExecutor()
+    thn = temperatureHumidityNode()
+    executor.add_node(thn)
     print('Temperature/humidity Package has booted!')
     try:
-        rclpy.spin(thn)
-    except KeyboardInterrupt:
+        executor.spin()
+    except (KeyboardInterrupt, rclpy.executors.ExternalShutdownException):
         pass
     finally:
         thn.destroy_node()
