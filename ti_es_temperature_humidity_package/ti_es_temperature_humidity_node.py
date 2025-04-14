@@ -23,7 +23,7 @@ class sensorData:
 
 class temperatureHumidityNode(Node):
     def __init__(self,**kwargs):
-        super().__init__('temperature_humidity_topic',**kwargs)
+        super().__init__('temperature_humidity_node',**kwargs)
 
 
     def on_configure(self, state: State) -> TransitionCallbackReturn:
@@ -47,7 +47,7 @@ class temperatureHumidityNode(Node):
 
     def on_activate(self, state: State) -> TransitionCallbackReturn:
         self.get_logger().info("Activating...")
-        
+
         # Start timers or subscriptions
         self.timer = self.create_timer(I2C_TIMER, self.timer_callback)
 
