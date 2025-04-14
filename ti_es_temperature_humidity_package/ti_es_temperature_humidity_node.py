@@ -40,7 +40,7 @@ class temperatureHumidityNode(Node):
                 print("Error: Sensor not found. Retrying...")
                 time.sleep(1)  # Wait before retrying
 
-        self.log_publisher = self.create_publisher(String, "ti/es/log_data", 10)        
+        self.log_publisher = self.create_publisher(String, "ti/es/log_data", 10)
 
         return TransitionCallbackReturn.SUCCESS
 
@@ -125,7 +125,7 @@ def main(args=None):
     print('Temperature/humidity Package has booted!')
     try:
         rclpy.spin(thn)
-    except (KeyboardInterrupt, rclpy.executors.ExternalShutdownException):
+    except (KeyboardInterrupt):
         pass
     finally:
         thn.destroy_node()
