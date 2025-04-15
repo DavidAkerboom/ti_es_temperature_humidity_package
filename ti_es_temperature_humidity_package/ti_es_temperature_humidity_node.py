@@ -58,7 +58,7 @@ class temperatureHumidityNode(Node):
         self.get_logger().info("Deactivating...")
 
         # Stop timers or other activity
-        self.destroy_timer(self.timer_callback)
+        self.destroy_timer(self.timer)
 
         return super().on_deactivate(state)
 
@@ -76,7 +76,7 @@ class temperatureHumidityNode(Node):
         self.get_logger().info("Shutting down...")
 
         # Final cleanup if needed
-        self.destroy_timer(self.timer_callback)
+        self.destroy_timer(self.timer)
         self.destroy_publisher(self.log_publisher)
 
         return TransitionCallbackReturn.SUCCESS
